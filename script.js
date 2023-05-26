@@ -27,3 +27,4 @@ function del(){
     result.value = result2.substring(0, result2.length - 1);
 }
 
+
