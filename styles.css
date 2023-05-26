@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+:root{
+    --background          : #3a4764;
+    --background-dark     : #232c43;
+    --background-very-dark: #182034;
+
+
+    --key-color-top       : #ffffff;
+    --key-color-bottom    : #3a4764;
+    --key-background      : #eae3dc;
+    --key-background-dark : #dfd9d2;
+    --key-shadow          : #b4a597;
+
+    --key-blue-background : #637097;
+    --key-blue-shadow     : #404e72;
+
+    --key-red-background  : #d03f2f;
+    --key-red-shadow      : #93261a;
+    
+    --background-del-reset-1: #388187;
+    --background-del-reset-2: #1c6166; 
+
+}
+
+body {
+    margin-top: 100px;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.calculator {
+    width: 450px;
+    background-color: #333;
+    color: #fff;
+    margin: 0 auto;
+    padding: 1px 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#reset, #del{
+    background-color:var(--background-del-reset-2);
+    color: #fff;
+    /* box-shadow: 1px 1.5px 1px var(--key-blue-shadow);
+    border: 2px solid var(--key-blue-background); */
+    transition: 0.5s;
+}
+
+#reset:hover, #del:hover{
+    border: 3px solid var(--key-red-background);
+    color: var(--key-red-background);
+    background-color: var(--background-del-reset-1);
+    transition: 0.5s;
+}
+#equals{
+    background-color: var(--key-red-background);
+}
+#equals:hover{
+    border: 2px solid var(--key-red-background);
+    color: var(--key-red-background);
+    background-color: hsla(0, 0%, 100%, 0);
+    transition: 0.5s;
+}
+
+.calculator input {
+    width: 100%;
+    color: #fff;
+    height: 60px;
+    margin-bottom: 10px;
+    padding: 5px 0 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+}
+
+#result {
+    text-align: right;
+    font-size: 2rem;
+}
+
+.calculator .button {
+    width: 50%;
+    height: 40px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    background-color: #555;
+    color: #fff;
+}
+
+.calculator .button:hover {
+    /*background-color: #777;*/
+    border: 2px solid var(--key-red-background);
+    color: var(--key-red-background);
+    background-color: hsla(0, 0%, 100%, 0);
+    transition: 0.5s;
+}
+
+.calculator .row {
+    display: flex;
+    justify-content: space-between;
+}

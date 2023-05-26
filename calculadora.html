@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculadora Android</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+
+    <div class="calculator">
+
+        <h3 class="row1">Calculadora</h3>
+
+      <input type="text" id="result" disabled value=" " />
+
+      <div class="row">
+        <input class="button" type="button" value="7" onclick="input('7')" />
+        <input class="button" type="button" value="8" onclick="input('8')" />
+        <input class="button" type="button" value="9" onclick="input('9')" />
+        <input class="button" type="button" value="DEL" id="del" onclick="del()"/>
+      </div>
+
+      <div class="row">
+        <input class="button" type="button" value="4" onclick="input('4')" />
+        <input class="button" type="button" value="5" onclick="input('5')" />
+        <input class="button" type="button" value="6" onclick="input('6')" />
+        <input class="button" type="button" value="+" onclick="input('+')" />
+      </div>
+
+      <div class="row">
+        <input class="button" type="button" value="1" onclick="input('1')" />
+        <input class="button" type="button" value="2" onclick="input('2')" />
+        <input class="button" type="button" value="3" onclick="input('3')" />
+        <input class="button" type="button" value="-" onclick="input('-')" />
+      </div>
+
+      <div class="row">
+        <input class="button" type="button" value="." onclick="input('.')" />
+        <input class="button" type="button" value="0" onclick="input('0')" />
+        <input class="button" type="button" value="/" onclick="input('/')" />
+        <input class="button" type="button" value="x" onclick="input('*')" />
+      </div>
+
+      <div class="row">
+        <input class="button" type="button" value="RESET" id="reset" onclick="reset()"/>
+        <input class="button" type="button" value="=" id="equals" onclick="calc()"/>
+      </div>
+
+    </div>
+    
+    <script src="script.js"></script>
+  
+</body>
+
+</html>
